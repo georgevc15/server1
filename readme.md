@@ -1,0 +1,1 @@
+Node server that is able to receive, update and delete information which is stored in MondoDB

@@ -1,0 +1,27 @@
+{
+  "name": "node-async-web-server",
+  "version": "1.0.0",
+  "description": "Node web server build with Express, MongoDB ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node.js",
+    "MongoDB",
+    "Redis",
+    "Express",
+    "Multiple",
+    "servers"
+  ],
+  "author": "George Codat Tudoran",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.0.0-rc.6",
+    "body-parser": "^1.12.4",
+    "express": "^4.13.4",
+    "lodash": "^4.13.1",
+    "mongoose": "^4.5.1",
+    "request": "^2.72.0"
+  }
+}
