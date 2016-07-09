@@ -1,1 +1,1 @@
-Node server that is able to receive, update and delete information which is stored in MondoDB
+Node server that is able to receive, update, show and delete information which are stored in MondoDB
