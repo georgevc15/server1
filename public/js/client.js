@@ -12,7 +12,7 @@ $(function(){
 		var a = new RegExp('\\b' + localLink + '\\b');
 		//console.log (a.test(currentUrl)); // false
 		  
-		if(a.test(currentUrl) == true) {  var serverLink = 'http://localhost:3000/cat/'+petId;  } else {  var serverLink = 'https://serene-plateau-90342.herokuapp.com/cat'+petId   }
+		if(a.test(currentUrl) == true) {  var serverLink = 'http://localhost:3000/cat/'+petId;  } else {  var serverLink = 'https://serene-plateau-90342.herokuapp.com/cat/'+petId   }
 
 	   //if(currentUrl == 'http://localhost:3001/') {  var serverLink = 'http://localhost:3001/dog/'+petId;  } else {  var serverLink = 'https://evening-inlet-33905.herokuapp.com/'+petId   }
 		  console.log("server link"+serverLink);
