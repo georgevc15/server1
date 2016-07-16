@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="UTF-8">
+  <title>Show information about <%= petinfo.name %></title>
+  <link rel="stylesheet" href="./../css/style.css" />
+  <link rel="stylesheet" href="./../vendor/css/bootstrap.css" />
+</head>
+<body>
+
+
+<div class="container-fluid">
+    <div class="row">
+	     <div class="col-md-12">
+	     	<a href="https://cryptic-lowlands-67233.herokuapp.com" class="btn btn-danger">Back</a>
+	     </div>
+	</div> 
+
+
+ <div class="row">
+	     <div class="col-md-10">
+         <div class="alert failed" style="display:none">Name, age and type needs to be filled!</div>
+         <div class="alert success" style="display:none">Record updated succesfully!</div>
+       </div>
+    </div>
+    <div class="row">   
+	<div class="col-md-2">
+	<form id="form_edit_cat">
+	              <legend class="white">Edit <%= petinfo.name %></legend>
+	                  <div class="form-group">
+	                  <label>Name:</label> 
+	                   <input name="name" value="<%= petinfo.name %>" class="form-control"><br>
+	                 </div>
+
+	                 <div class="form-group">
+	                  <label>Age:</label> 
+	                   <input name="age" value="<%= petinfo.age %>" class="form-control"><br>
+	                 </div>
+	                 
+
+	                 <div class="form-group">
+	                  <label>Type:</label> 
+	                   <input name="type" value="<%= petinfo.type %>" class="form-control"><br>
+	                 </div>
+	               
+
+
+	             <input type="hidden"  name="petid" id="petid" value="<%= petinfo.id %>">
+	              <input type="Submit" class="btn btn-primary" value="Update"> 
+	  </form>
+	   </div>
+	 </div>
+   </div>
+
+  <script src="./../vendor/js/jquery.js"></script>
+  <script src="./../vendor/js/bootstrap.min.js"></script>
+  <script src="./../js/client.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
